@@ -1,5 +1,5 @@
 import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-5c74f6fe"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
@@ -30,43 +30,41 @@ const g = (n) => (p("data-v-5c74f6fe"), n = n(), m(), n), y = { class: "credits-
 }, O = {
   key: 3,
   class: "credits--list"
-}, T = /* @__PURE__ */ g(() => /* @__PURE__ */ t("li", { class: "credits--list" }, " Donations to Peter Dostoevsky in Eve Online will be turned into lossmails. ", -1)), V = { class: "credits--list" }, $ = {
+}, T = /* @__PURE__ */ g(() => /* @__PURE__ */ t("li", { class: "credits--list" }, " Donations to Peter Dostoevsky in Eve Online will be turned into lossmails. ", -1)), V = { class: "credits--list" }, U = {
   href: "https://www.eveonline.com/signup?invc=5d52b821-87c0-4c81-bd0a-2cd88e9001b6",
   target: "_blank",
   rel: "noopener noreferrer"
-}, L = {
+}, $ = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, P = {
+}, L = {
   href: "https://www.buymeacoffee.com/shanebelldev",
   target: "_blank",
   rel: "noopener noreferrer"
-}, j = {
+}, P = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, z = {
+}, j = {
   key: 5,
   class: "credits--list"
-}, A = {
+}, z = {
   href: "https://www.buymeacoffee.com/shanebelldev",
   target: "_blank",
   rel: "noopener noreferrer"
-}, G = {
+}, A = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, H = {
-  href: "https://github.com/dotfortun/wormroller/labels/bug",
-  target: "_blank"
-}, J = {
+}, G = ["href"], H = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, K = /* @__PURE__ */ h({
+}, J = /* @__PURE__ */ h({
   __name: "Credits",
   props: {
     creators: {},
     eveCredits: { type: Boolean },
     useFa: { type: Boolean },
-    realName: { type: Boolean }
+    realName: { type: Boolean },
+    bugUrl: {}
   },
   setup(n) {
     return (e, c) => (r(), o("footer", y, [
@@ -127,39 +125,43 @@ const g = (n) => (p("data-v-5c74f6fe"), n = n(), m(), n), y = { class: "credits-
           e.eveCredits ? (r(), o(d, { key: 4 }, [
             T,
             t("li", V, [
-              t("a", $, [
+              t("a", U, [
                 s(" Try Eve Online"),
-                e.useFa ? (r(), o("i", L)) : a("", !0)
+                e.useFa ? (r(), o("i", $)) : a("", !0)
               ]),
               s(" or "),
-              t("a", P, [
+              t("a", L, [
                 s("buy me a coffee"),
-                e.useFa ? (r(), o("i", j)) : a("", !0)
+                e.useFa ? (r(), o("i", P)) : a("", !0)
               ])
             ])
-          ], 64)) : (r(), o("li", z, [
+          ], 64)) : (r(), o("li", j, [
             s(" If you like this, consider "),
-            t("a", A, [
+            t("a", z, [
               s("buying me a coffee"),
-              e.useFa ? (r(), o("i", G)) : a("", !0)
+              e.useFa ? (r(), o("i", A)) : a("", !0)
             ])
           ]))
         ])
       ]),
       t("div", null, [
-        t("a", H, [
+        t("a", {
+          href: e.bugUrl,
+          target: "_blank",
+          rel: "noopener noreferrer"
+        }, [
           s(" Found a bug? Tell us here!"),
-          e.useFa ? (r(), o("i", J)) : a("", !0)
-        ])
+          e.useFa ? (r(), o("i", H)) : a("", !0)
+        ], 8, G)
       ])
     ]));
   }
-}), M = (n, e) => {
+}), K = (n, e) => {
   const c = n.__vccOpts || n;
   for (const [l, f] of e)
     c[l] = f;
   return c;
-}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-5c74f6fe"]]);
+}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-f22fc999"]]);
 export {
-  R as Credits
+  Q as Credits
 };
