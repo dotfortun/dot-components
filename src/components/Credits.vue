@@ -4,11 +4,12 @@ interface Creator {
   href: string;
 }
 
-const { creators, eveCredits, useFa, realName } = defineProps<{
+const { creators, eveCredits, useFa, realName, bugUrl } = defineProps<{
   creators?: Creator[];
   eveCredits?: boolean;
   useFa?: boolean;
   realName?: boolean;
+  bugUrl?: string;
 }>();
 </script>
 
@@ -130,10 +131,7 @@ const { creators, eveCredits, useFa, realName } = defineProps<{
     </div>
 
     <div>
-      <a
-        href="https://github.com/dotfortun/wormroller/labels/bug"
-        target="_blank"
-      >
+      <a :href="bugUrl" target="_blank" rel="noopener noreferrer">
         Found a bug? Tell us here!<i
           v-if="useFa"
           class="fa-solid fa-arrow-up-right-from-square"
