@@ -4,10 +4,11 @@ interface Creator {
   href: string;
 }
 
-const { creators, eveCredits, useFa } = defineProps<{
+const { creators, eveCredits, useFa, realName } = defineProps<{
   creators?: Creator[];
   eveCredits?: boolean;
   useFa?: boolean;
+  realName?: boolean;
 }>();
 </script>
 
@@ -72,14 +73,17 @@ const { creators, eveCredits, useFa } = defineProps<{
               href="https://github.com/dotfortun"
               target="_blank"
               rel="noopener noreferrer"
-              >Shane B.<i
+              >{{ realName ? "Shane B." : "dotfortun"
+              }}<i
                 v-if="useFa"
                 class="fa-solid fa-arrow-up-right-from-square"
               ></i
             ></a>
           </li>
         </template>
-        <slot name="extra"></slot>
+        <li class="credits--list" v-if="$slots.extra">
+          <slot name="extra"></slot>
+        </li>
         <template v-if="eveCredits">
           <li class="credits--list">
             Donations to Peter Dostoevsky in Eve Online will be turned into
