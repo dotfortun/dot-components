@@ -15,6 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cssnano": "^7.0.3",
     "path": "^0.12.7",
     "vue": "^3.4.21"
   },
