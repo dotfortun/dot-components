@@ -1,5 +1,5 @@
-import { defineComponent as f, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+import { defineComponent as f, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as c, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
+const g = (n) => (p("data-v-95daaed2"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
@@ -69,7 +69,7 @@ const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits-
     realName: { type: Boolean }
   },
   setup(n) {
-    return (e, c) => (r(), o("footer", y, [
+    return (e, d) => (r(), o("footer", y, [
       t("div", null, [
         t("ul", null, [
           e.creators && e.creators.length > 1 ? (r(), o("li", k, [
@@ -82,7 +82,7 @@ const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits-
               s(i(e.creators[0].name), 1),
               e.useFa ? (r(), o("i", w)) : a("", !0)
             ], 8, b),
-            (r(!0), o(d, null, u(e.creators.slice(1, e.creators.length - 1), (l) => (r(), o(d, null, [
+            (r(!0), o(c, null, u(e.creators.slice(1, e.creators.length - 1), (l) => (r(), o(c, null, [
               s(", "),
               t("a", {
                 href: l.href,
@@ -124,7 +124,7 @@ const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits-
           e.$slots.extra ? (r(), o("li", O, [
             _(e.$slots, "extra", {}, void 0, !0)
           ])) : a("", !0),
-          e.eveCredits ? (r(), o(d, { key: 4 }, [
+          e.eveCredits ? (r(), o(c, { key: 4 }, [
             T,
             t("li", V, [
               t("a", $, [
@@ -155,11 +155,11 @@ const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits-
     ]));
   }
 }), M = (n, e) => {
-  const c = n.__vccOpts || n;
+  const d = n.__vccOpts || n;
   for (const [l, h] of e)
-    c[l] = h;
-  return c;
-}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-928a057c"]]);
+    d[l] = h;
+  return d;
+}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-95daaed2"]]);
 export {
   R as Credits
 };
