@@ -142,8 +142,8 @@ const { creators, eveCredits, useFa } = defineProps<{
 <style scoped>
 .credits--container {
   @apply flex-col max-sm:items-center;
-  @apply container mb-5 mt-2 px-1 flex sm:flex-row sm:justify-between text-sm;
-  @apply text-balance text-center sm:text-left;
+  @apply container mb-5 mt-2 px-1 flex sm:flex-row sm:justify-between;
+  @apply prose dark:prose-invert prose-sm max-w-none text-balance text-center sm:text-left;
 }
 
 .credits--container ul {

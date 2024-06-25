@@ -1,5 +1,5 @@
-import { defineComponent as f, openBlock as o, createElementBlock as s, createElementVNode as t, createTextVNode as r, toDisplayString as l, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-1e460336"), n = n(), m(), n), k = { class: "credits--container" }, y = {
+import { defineComponent as h, openBlock as o, createElementBlock as s, createElementVNode as t, createTextVNode as r, toDisplayString as l, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
+const g = (n) => (p("data-v-f94d50f0"), n = n(), m(), n), k = { class: "credits--container" }, y = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
@@ -57,7 +57,7 @@ const g = (n) => (p("data-v-1e460336"), n = n(), m(), n), k = { class: "credits-
 }, H = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, J = /* @__PURE__ */ f({
+}, J = /* @__PURE__ */ h({
   __name: "Credits",
   props: {
     creators: {},
@@ -150,10 +150,10 @@ const g = (n) => (p("data-v-1e460336"), n = n(), m(), n), k = { class: "credits-
   }
 }), K = (n, e) => {
   const c = n.__vccOpts || n;
-  for (const [i, h] of e)
-    c[i] = h;
+  for (const [i, f] of e)
+    c[i] = f;
   return c;
-}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-1e460336"]]);
+}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-f94d50f0"]]);
 export {
   Q as Credits
 };
