@@ -1,5 +1,5 @@
 import { defineComponent as f, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-7934c913"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+const g = (n) => (p("data-v-928a057c"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
@@ -159,7 +159,7 @@ const g = (n) => (p("data-v-7934c913"), n = n(), m(), n), y = { class: "credits-
   for (const [l, h] of e)
     c[l] = h;
   return c;
-}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-7934c913"]]);
+}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-928a057c"]]);
 export {
   R as Credits
 };
