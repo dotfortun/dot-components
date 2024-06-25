@@ -16,7 +16,7 @@ const { creators, eveCredits, useFa } = defineProps<{
     <div>
       <ul>
         <template v-if="creators && creators.length > 1">
-          <li>
+          <li class="credits--list">
             Created by
             <a
               :href="creators[0].href"
@@ -51,7 +51,7 @@ const { creators, eveCredits, useFa } = defineProps<{
           </li>
         </template>
         <template v-else-if="creators && creators.length === 1">
-          <li>
+          <li class="credits--list">
             Created by
             <a
               :href="creators[0].href"
@@ -66,7 +66,7 @@ const { creators, eveCredits, useFa } = defineProps<{
           </li>
         </template>
         <template v-else>
-          <li>
+          <li class="credits--list">
             Created by
             <a
               href="https://github.com/dotfortun"
@@ -81,11 +81,11 @@ const { creators, eveCredits, useFa } = defineProps<{
         </template>
         <slot name="extra"></slot>
         <template v-if="eveCredits">
-          <li>
+          <li class="credits--list">
             Donations to Peter Dostoevsky in Eve Online will be turned into
             lossmails.
           </li>
-          <li>
+          <li class="credits--list">
             <a
               href="https://www.eveonline.com/signup?invc=5d52b821-87c0-4c81-bd0a-2cd88e9001b6"
               target="_blank"
@@ -109,7 +109,7 @@ const { creators, eveCredits, useFa } = defineProps<{
           </li>
         </template>
         <template v-else>
-          <li>
+          <li class="credits--list">
             If you like this, consider
             <a
               href="https://www.buymeacoffee.com/shanebelldev"
@@ -150,7 +150,7 @@ const { creators, eveCredits, useFa } = defineProps<{
   @apply pl-0 flex flex-col items-center sm:items-start;
 }
 
-.credits--container ul li {
+.credits--container ul li.credits--list {
   @apply list-none;
 }
 
