@@ -1,8 +1,8 @@
 import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-2dbaf19c"), n = n(), m(), n), y = { class: "credits--container" }, b = {
+const g = (n) => (p("data-v-5c74f6fe"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
-}, k = ["href"], w = {
+}, b = ["href"], w = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
 }, v = ["href"], F = {
@@ -72,7 +72,7 @@ const g = (n) => (p("data-v-2dbaf19c"), n = n(), m(), n), y = { class: "credits-
     return (e, c) => (r(), o("footer", y, [
       t("div", null, [
         t("ul", null, [
-          e.creators && e.creators.length > 1 ? (r(), o("li", b, [
+          e.creators && e.creators.length > 1 ? (r(), o("li", k, [
             s(" Created by "),
             t("a", {
               href: e.creators[0].href,
@@ -81,7 +81,7 @@ const g = (n) => (p("data-v-2dbaf19c"), n = n(), m(), n), y = { class: "credits-
             }, [
               s(i(e.creators[0].name), 1),
               e.useFa ? (r(), o("i", w)) : a("", !0)
-            ], 8, k),
+            ], 8, b),
             (r(!0), o(d, null, u(e.creators.slice(1, e.creators.length - 1), (l) => (r(), o(d, null, [
               s(", "),
               t("a", {
@@ -159,7 +159,7 @@ const g = (n) => (p("data-v-2dbaf19c"), n = n(), m(), n), y = { class: "credits-
   for (const [l, f] of e)
     c[l] = f;
   return c;
-}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-2dbaf19c"]]);
+}, R = /* @__PURE__ */ M(K, [["__scopeId", "data-v-5c74f6fe"]]);
 export {
   R as Credits
 };

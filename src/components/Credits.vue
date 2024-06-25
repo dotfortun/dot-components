@@ -152,7 +152,7 @@ const { creators, eveCredits, useFa, realName } = defineProps<{
 
 .credits--container ul {
   @apply pl-0 flex flex-col items-center sm:items-start;
-  margin-top: none !important;
+  margin-top: 0 !important;
 }
 
 .credits--container ul li.credits--list {
