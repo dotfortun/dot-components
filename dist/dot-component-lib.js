@@ -1,5 +1,5 @@
 import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+import './index.css';const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {

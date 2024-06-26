@@ -3,7 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./projects/my-lib/**/*.{html,ts,css,scss}",
+    "./dist/**/*.{html,ts,css,scss}",
   ],
   theme: {
     extend: {

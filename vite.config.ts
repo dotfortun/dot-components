@@ -1,14 +1,15 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 import { resolve, dirname } from "path";
-import { fileURLToPath } from 'url';
-import vue from '@vitejs/plugin-vue';
+import { fileURLToPath } from "url";
+import vue from "@vitejs/plugin-vue";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), libInjectCss()],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
@@ -28,4 +29,4 @@ export default defineConfig({
       },
     },
   },
-})
+});
