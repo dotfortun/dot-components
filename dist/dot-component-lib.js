@@ -1,5 +1,5 @@
 import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-import './index.css';const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
@@ -37,14 +37,14 @@ import './index.css';const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y
 }, $ = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, L = {
+}, j = {
   href: "https://www.buymeacoffee.com/shanebelldev",
   target: "_blank",
   rel: "noopener noreferrer"
-}, P = {
+}, L = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, j = {
+}, P = {
   key: 5,
   class: "credits--list"
 }, z = {
@@ -130,13 +130,13 @@ import './index.css';const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y
                 e.useFa ? (r(), o("i", $)) : a("", !0)
               ]),
               s(" or "),
-              t("a", L, [
+              t("a", j, [
                 s("buy me a coffee"),
-                e.useFa ? (r(), o("i", P)) : a("", !0)
+                e.useFa ? (r(), o("i", L)) : a("", !0)
               ])
             ])
-          ], 64)) : (r(), o("li", j, [
-            s(" If you like this, consider "),
+          ], 64)) : (r(), o("li", P, [
+            s(" If you like my projects, consider "),
             t("a", z, [
               s("buying me a coffee"),
               e.useFa ? (r(), o("i", A)) : a("", !0)
@@ -161,7 +161,7 @@ import './index.css';const g = (n) => (p("data-v-f22fc999"), n = n(), m(), n), y
   for (const [l, f] of e)
     c[l] = f;
   return c;
-}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-f22fc999"]]);
+}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-3b80c4fc"]]);
 export {
   Q as Credits
 };

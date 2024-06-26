@@ -115,7 +115,7 @@ const { creators, eveCredits, useFa, realName, bugUrl } = defineProps<{
         </template>
         <template v-else>
           <li class="credits--list">
-            If you like this, consider
+            If you like my projects, consider
             <a
               href="https://www.buymeacoffee.com/shanebelldev"
               target="_blank"
