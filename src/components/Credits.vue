@@ -4,13 +4,15 @@ interface Creator {
   href: string;
 }
 
-const { creators, eveCredits, useFa, realName, bugUrl } = defineProps<{
-  creators?: Creator[];
-  eveCredits?: boolean;
-  useFa?: boolean;
-  realName?: boolean;
-  bugUrl?: string;
-}>();
+const { creators, eveCredits, useFa, realName, bugUrl, noCoffee } =
+  defineProps<{
+    creators?: Creator[];
+    eveCredits?: boolean;
+    useFa?: boolean;
+    realName?: boolean;
+    bugUrl?: string;
+    noCoffee?: boolean;
+  }>();
 </script>
 
 <template>
@@ -101,20 +103,22 @@ const { creators, eveCredits, useFa, realName, bugUrl } = defineProps<{
                 class="fa-solid fa-arrow-up-right-from-square"
               ></i>
             </a>
-            or
-            <a
-              href="https://www.buymeacoffee.com/shanebelldev"
-              target="_blank"
-              rel="noopener noreferrer"
-              >buy me a coffee<i
-                v-if="useFa"
-                class="fa-solid fa-arrow-up-right-from-square"
-              ></i
-            ></a>
+            <template v-if="!noCoffee">
+              or
+              <a
+                href="https://www.buymeacoffee.com/shanebelldev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >buy me a coffee<i
+                  v-if="useFa"
+                  class="fa-solid fa-arrow-up-right-from-square"
+                ></i
+              ></a>
+            </template>
           </li>
         </template>
         <template v-else>
-          <li class="credits--list">
+          <li v-if="!noCoffee" class="credits--list">
             If you like my projects, consider
             <a
               href="https://www.buymeacoffee.com/shanebelldev"

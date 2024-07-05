@@ -1,14 +1,14 @@
-import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as i, createCommentVNode as a, Fragment as d, renderList as u, renderSlot as _, pushScopeId as p, popScopeId as m } from "vue";
-import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y = { class: "credits--container" }, k = {
+import { defineComponent as h, openBlock as r, createElementBlock as o, createElementVNode as t, createTextVNode as s, toDisplayString as l, createCommentVNode as a, Fragment as i, renderList as u, renderSlot as p, pushScopeId as _, popScopeId as m } from "vue";
+import './index.css';const y = (n) => (_("data-v-4e1198cb"), n = n(), m(), n), g = { class: "credits--container" }, k = {
   key: 0,
   class: "credits--list"
 }, b = ["href"], w = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, v = ["href"], F = {
+}, v = ["href"], C = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
-}, q = ["href"], C = {
+}, F = ["href"], q = {
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
 }, B = {
@@ -30,7 +30,7 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
 }, O = {
   key: 3,
   class: "credits--list"
-}, T = /* @__PURE__ */ g(() => /* @__PURE__ */ t("li", { class: "credits--list" }, " Donations to Peter Dostoevsky in Eve Online will be turned into lossmails. ", -1)), V = { class: "credits--list" }, U = {
+}, T = /* @__PURE__ */ y(() => /* @__PURE__ */ t("li", { class: "credits--list" }, " Donations to Peter Dostoevsky in Eve Online will be turned into lossmails. ", -1)), V = { class: "credits--list" }, U = {
   href: "https://www.eveonline.com/signup?invc=5d52b821-87c0-4c81-bd0a-2cd88e9001b6",
   target: "_blank",
   rel: "noopener noreferrer"
@@ -45,7 +45,7 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
   key: 0,
   class: "fa-solid fa-arrow-up-right-from-square"
 }, P = {
-  key: 5,
+  key: 0,
   class: "credits--list"
 }, z = {
   href: "https://www.buymeacoffee.com/shanebelldev",
@@ -64,10 +64,11 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
     eveCredits: { type: Boolean },
     useFa: { type: Boolean },
     realName: { type: Boolean },
-    bugUrl: {}
+    bugUrl: {},
+    noCoffee: { type: Boolean }
   },
   setup(n) {
-    return (e, c) => (r(), o("footer", y, [
+    return (e, c) => (r(), o("footer", g, [
       t("div", null, [
         t("ul", null, [
           e.creators && e.creators.length > 1 ? (r(), o("li", k, [
@@ -77,18 +78,18 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
               target: "_blank",
               rel: "noopener noreferrer"
             }, [
-              s(i(e.creators[0].name), 1),
+              s(l(e.creators[0].name), 1),
               e.useFa ? (r(), o("i", w)) : a("", !0)
             ], 8, b),
-            (r(!0), o(d, null, u(e.creators.slice(1, e.creators.length - 1), (l) => (r(), o(d, null, [
+            (r(!0), o(i, null, u(e.creators.slice(1, e.creators.length - 1), (f) => (r(), o(i, null, [
               s(", "),
               t("a", {
-                href: l.href,
+                href: f.href,
                 target: "_blank",
                 rel: "noopener noreferrer"
               }, [
-                s(i(l.name) + " ", 1),
-                e.useFa ? (r(), o("i", F)) : a("", !0)
+                s(l(f.name) + " ", 1),
+                e.useFa ? (r(), o("i", C)) : a("", !0)
               ], 8, v)
             ], 64))), 256)),
             s(", & "),
@@ -97,9 +98,9 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
               target: "_blank",
               rel: "noopener noreferrer"
             }, [
-              s(i(e.creators[e.creators.length - 1].name), 1),
-              e.useFa ? (r(), o("i", C)) : a("", !0)
-            ], 8, q),
+              s(l(e.creators[e.creators.length - 1].name), 1),
+              e.useFa ? (r(), o("i", q)) : a("", !0)
+            ], 8, F),
             s(". ")
           ])) : e.creators && e.creators.length === 1 ? (r(), o("li", B, [
             s(" Created by "),
@@ -108,40 +109,44 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
               target: "_blank",
               rel: "noopener noreferrer"
             }, [
-              s(i(e.creators[0].name), 1),
+              s(l(e.creators[0].name), 1),
               e.useFa ? (r(), o("i", I)) : a("", !0)
             ], 8, S),
             s(". ")
           ])) : (r(), o("li", N, [
             s(" Created by "),
             t("a", E, [
-              s(i(e.realName ? "Shane B." : "dotfortun"), 1),
+              s(l(e.realName ? "Shane B." : "dotfortun"), 1),
               e.useFa ? (r(), o("i", D)) : a("", !0)
             ])
           ])),
           e.$slots.extra ? (r(), o("li", O, [
-            _(e.$slots, "extra", {}, void 0, !0)
+            p(e.$slots, "extra", {}, void 0, !0)
           ])) : a("", !0),
-          e.eveCredits ? (r(), o(d, { key: 4 }, [
+          e.eveCredits ? (r(), o(i, { key: 4 }, [
             T,
             t("li", V, [
               t("a", U, [
                 s(" Try Eve Online"),
                 e.useFa ? (r(), o("i", $)) : a("", !0)
               ]),
-              s(" or "),
-              t("a", j, [
-                s("buy me a coffee"),
-                e.useFa ? (r(), o("i", L)) : a("", !0)
+              e.noCoffee ? a("", !0) : (r(), o(i, { key: 0 }, [
+                s(" or "),
+                t("a", j, [
+                  s("buy me a coffee"),
+                  e.useFa ? (r(), o("i", L)) : a("", !0)
+                ])
+              ], 64))
+            ])
+          ], 64)) : (r(), o(i, { key: 5 }, [
+            e.noCoffee ? a("", !0) : (r(), o("li", P, [
+              s(" If you like my projects, consider "),
+              t("a", z, [
+                s("buying me a coffee"),
+                e.useFa ? (r(), o("i", A)) : a("", !0)
               ])
-            ])
-          ], 64)) : (r(), o("li", P, [
-            s(" If you like my projects, consider "),
-            t("a", z, [
-              s("buying me a coffee"),
-              e.useFa ? (r(), o("i", A)) : a("", !0)
-            ])
-          ]))
+            ]))
+          ], 64))
         ])
       ]),
       t("div", null, [
@@ -158,10 +163,10 @@ import './index.css';const g = (n) => (p("data-v-3b80c4fc"), n = n(), m(), n), y
   }
 }), K = (n, e) => {
   const c = n.__vccOpts || n;
-  for (const [l, f] of e)
-    c[l] = f;
+  for (const [f, d] of e)
+    c[f] = d;
   return c;
-}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-3b80c4fc"]]);
+}, Q = /* @__PURE__ */ K(J, [["__scopeId", "data-v-4e1198cb"]]);
 export {
   Q as Credits
 };

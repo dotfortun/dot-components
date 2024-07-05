@@ -8,12 +8,14 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     useFa?: boolean | undefined;
     realName?: boolean | undefined;
     bugUrl?: string | undefined;
+    noCoffee?: boolean | undefined;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<{
     creators?: Creator[] | undefined;
     eveCredits?: boolean | undefined;
     useFa?: boolean | undefined;
     realName?: boolean | undefined;
     bugUrl?: string | undefined;
+    noCoffee?: boolean | undefined;
 }>>>, {}, {}>, {
     extra?(_: {}): any;
 }>;
